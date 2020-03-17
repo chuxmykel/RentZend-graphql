@@ -1,0 +1,30 @@
+{
+  "name": "rentzend-graphql",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:chuxmykel/RentZend-graphql.git",
+  "author": "chuxmykel <ngwobiachukwudi@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "node build/index.js",
+    "dev": "nodemon --exec babel-node src/index.js",
+    "clean": "rm -rf build && mkdir build",
+    "build": "npm run clean && babel -d ./build ./src"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/node": "^7.2.2",
+    "@babel/preset-env": "^7.2.3",
+    "nodemon": "^1.18.9"
+  },
+  "dependencies": {
+    "apollo-server": "^2.10.1",
+    "apollo-server-express": "^2.10.1",
+    "cloudinary": "^1.20.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "pg": "^7.18.2",
+    "sequelize": "^5.21.5"
+  }
+}
